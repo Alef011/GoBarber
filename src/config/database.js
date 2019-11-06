@@ -4,7 +4,7 @@ module.exports = {
   username: 'postgres',
   password: 'docker',
   database: 'gobarber',
-  definie: {
+  define: {
     timestamps: true,
     underscored: true,
     underscoredAll: true,
