@@ -3,9 +3,8 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: [
-    'airbnb-base',
-  ],
+  extends: ['airbnb-base', 'prettier'],
+  plugins: ['prettier'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -15,9 +14,10 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    "prettier/prettier": "error",
     "Class-methods-use-this": "off",
     "no-params-reassign": "off",
     "camelcase": "off",
-    "no-unused-vars": ["error",{"argsIgnorePattern": "next"}]
+    "no-unused-vars": ["error", {"argsIgnorePattern": "next"}]
   },
 };
