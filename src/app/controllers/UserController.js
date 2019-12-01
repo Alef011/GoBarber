@@ -1,11 +1,7 @@
-/* eslint-disable lines-between-class-members */
-/* eslint-disable no-unused-vars */
-/* eslint-disable class-methods-use-this */
 import * as Yup from 'yup';
 import User from '../models/User';
 
 class UserController {
-  // eslint-disable-next-line class-methods-use-this
   async store(req, res) {
     const schema = Yup.object().shape({
       name: Yup.string().required(),
@@ -31,6 +27,7 @@ class UserController {
       provider,
     });
   }
+
   async update(req, res) {
     const schema = Yup.object().shape({
       name: Yup.string(),
