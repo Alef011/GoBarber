@@ -5,11 +5,11 @@ module.exports = {
       references: { model: 'files', key: 'id' },
       onUpdate: 'CASCADE',
       onDelete: 'SET NULL',
-      alloNull: true,
+      allowNull: true,
     });
   },
 
   down: queryInterface => {
-    return queryInterface.removeColumn('users', 'avatar_id'); // passei o caminho
+    return queryInterface.removeColumn('users', 'avatar_id');
   },
 };
